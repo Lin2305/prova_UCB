@@ -1,0 +1,41 @@
+#include <stdio.h>
+	struct st_alunos{
+	char nome[50];
+	char matricula[10];
+	int nota;
+}
+int main() {
+	
+	struct st_alunos alunos[10][3];
+	int i, j, pior_nota;
+	
+	for (i = 0; i < 10; i++){
+		printf("Digite o nome do aluno: \n");
+		fgets(alunos[i].nome,50,stdin);
+
+		printf("Digite a matricula do aluno: \n");
+		fgets (alunos[i].matricula, 10, stdin);
+
+		for(j = 0; j < 10; j++) {
+			printf("Digite aqui a nota do aluno na disciplina:  %i" , j + 1);
+			scanf("%i", &alunos.nota[i][j];);
+		
+}
+}
+	for(i = 0; i < 10; i++){
+		for(j=0; j<3; j++){
+		if (alunos.nota[i][j] < pior_nota[j])
+			pior_nota[j] = alunos[i][j];
+}	
+}
+	printf("Aqui estão piores notas e o respectivo aluno:  \n");
+	for (j = 0; j < 3; j++){
+		printf("Disciplina %i ", j ++);
+		for(i = 0; i<10; i++) {
+			if (alunos[i][j] == pior_nota[j]) 
+				printf("%c", aluno.nome[i]);
+}
+
+}
+}
+	
